@@ -18,9 +18,9 @@ All colors MUST be HSL.
     --popover: 0 0% 0%;
     --popover-foreground: 0 0% 100%;
 
-    /* Gold/Yellow primary color */
-    --primary: 50 100% 67%; /* #FFD95D */
-    --primary-variant: 48 98% 46%; /* #E3AE04 */
+    /* Gold/Yellow primary color - More vibrant to match image */
+    --primary: 48 100% 55%; /* More intense vibrant gold */
+    --primary-variant: 45 100% 45%; /* Darker variant */
     --primary-foreground: 0 0% 0%;
 
     /* Green CTA color */
@@ -33,7 +33,7 @@ All colors MUST be HSL.
     --muted: 0 0% 20%;
     --muted-foreground: 0 0% 70%;
 
-    --accent: 50 100% 67%;
+    --accent: 48 100% 55%;
     --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
@@ -41,18 +41,18 @@ All colors MUST be HSL.
 
     --border: 0 0% 15%;
     --input: 0 0% 15%;
-    --ring: 50 100% 67%;
+    --ring: 48 100% 55%;
 
     --radius: 0.75rem;
 
     /* Custom Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(50 100% 67%), hsl(48 98% 46%));
+    --gradient-gold: linear-gradient(135deg, hsl(48 100% 55%), hsl(45 100% 45%));
     --gradient-green: linear-gradient(135deg, hsl(120 100% 41%), hsl(120 100% 27%));
     --gradient-dark: linear-gradient(135deg, hsl(0 0% 0%), hsl(0 0% 5%));
 
     /* Shadows */
-    --shadow-elegant: 0 10px 30px -10px hsl(50 100% 67% / 0.3);
-    --shadow-glow: 0 0 40px hsl(50 100% 67% / 0.4);
+    --shadow-elegant: 0 10px 30px -10px hsl(48 100% 55% / 0.3);
+    --shadow-glow: 0 0 40px hsl(48 100% 55% / 0.4);
     --shadow-card: 0 4px 20px -2px hsl(0 0% 0% / 0.5);
 
     /* Transitions */
@@ -60,12 +60,12 @@ All colors MUST be HSL.
 
     --sidebar-background: 0 0% 0%;
     --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 50 100% 67%;
+    --sidebar-primary: 48 100% 55%;
     --sidebar-primary-foreground: 0 0% 0%;
     --sidebar-accent: 0 0% 10%;
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 0 0% 15%;
-    --sidebar-ring: 50 100% 67%;
+    --sidebar-ring: 48 100% 55%;
   }
 
   .dark {
