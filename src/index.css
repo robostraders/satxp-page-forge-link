@@ -59,10 +59,10 @@ All colors MUST be HSL.
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    /* Section Transition Variables */
-    --transition-height-mobile: 50px;
-    --transition-height-tablet: 60px;
-    --transition-height-desktop: 80px;
+    /* Section Fade Variables */
+    --fade-height-mobile: 60px;
+    --fade-height-tablet: 80px;
+    --fade-height-desktop: 100px;
 
     --sidebar-background: 0 0% 0%;
     --sidebar-foreground: 0 0% 100%;
@@ -124,39 +124,62 @@ All colors MUST be HSL.
 }
 
 @layer components {
-  /* Section Transition Utility */
-  .section-transition {
+  /* Section Fade Utilities */
+  .section-fade-top {
     @apply relative;
   }
 
-  .section-transition::after {
+  .section-fade-top::before {
     content: '';
     @apply absolute left-0 w-full pointer-events-none;
-    bottom: calc(var(--transition-height-mobile) / -2);
-    height: var(--transition-height-mobile);
+    top: 0;
+    height: var(--fade-height-mobile);
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.7) 20%,
+      rgba(0, 0, 0, 0.3) 60%,
+      transparent 100%
+    );
+    z-index: 5;
+  }
+
+  .section-fade-bottom {
+    @apply relative;
+  }
+
+  .section-fade-bottom::after {
+    content: '';
+    @apply absolute left-0 w-full pointer-events-none;
+    bottom: 0;
+    height: var(--fade-height-mobile);
     background: linear-gradient(
       to bottom,
       transparent 0%,
-      rgba(0, 0, 0, 0.8) 45%,
-      rgba(0, 0, 0, 0.8) 55%,
-      transparent 100%
+      rgba(0, 0, 0, 0.3) 40%,
+      rgba(0, 0, 0, 0.7) 80%,
+      rgba(0, 0, 0, 0.9) 100%
     );
-    backdrop-filter: blur(1px);
-    filter: blur(0.5px);
-    z-index: 10;
+    z-index: 5;
   }
 
   @media (min-width: 768px) {
-    .section-transition::after {
-      bottom: calc(var(--transition-height-tablet) / -2);
-      height: var(--transition-height-tablet);
+    .section-fade-top::before {
+      height: var(--fade-height-tablet);
+    }
+    
+    .section-fade-bottom::after {
+      height: var(--fade-height-tablet);
     }
   }
 
   @media (min-width: 1024px) {
-    .section-transition::after {
-      bottom: calc(var(--transition-height-desktop) / -2);
-      height: var(--transition-height-desktop);
+    .section-fade-top::before {
+      height: var(--fade-height-desktop);
+    }
+    
+    .section-fade-bottom::after {
+      height: var(--fade-height-desktop);
     }
   }
 }
