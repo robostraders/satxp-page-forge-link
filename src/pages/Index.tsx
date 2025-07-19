@@ -99,8 +99,8 @@ export default function Index() {
             <div className="h-px w-20 bg-gradient-to-l from-transparent to-primary"></div>
           </div>
           
-          {/* Main headline with exact formatting from image */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 max-w-6xl mx-auto leading-tight uppercase">
+          {/* Main headline with increased font size for 3 lines on desktop */}
+          <h1 className="text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-bold mb-8 max-w-6xl mx-auto leading-tight uppercase">
             A <span className="text-primary">XP ESTÁ PATROCINANDO</span> QUEM<br />
             <span className="text-primary">QUER PARAR DE OPERAR MANUALMENTE E COLOCAR ROBÔS</span><br />
             PARA TRABALHAR NO MERCADO
