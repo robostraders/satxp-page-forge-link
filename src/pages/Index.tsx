@@ -117,10 +117,8 @@ export default function Index() {
 
       {/* Registration Section */}
       <section className="py-20 bg-background relative overflow-hidden">
-        {/* Softer gradient overlay for smooth transition */}
-        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black/40 via-black/20 to-transparent z-5"></div>
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{
             backgroundImage: "url('https://framerusercontent.com/images/YFihUE32N3fqSpZxDVrTMYgAz8M.png')"
           }}
@@ -150,9 +148,7 @@ export default function Index() {
       </section>
 
       {/* Learning Section */}
-      <section className="py-20 bg-background relative">
-        {/* Softer gradient overlay for smooth transition */}
-        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-background/60 via-background/30 to-transparent z-5"></div>
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 text-primary tracking-wider">O QUE VOCÊ VAI APRENDER:</h2>
           
