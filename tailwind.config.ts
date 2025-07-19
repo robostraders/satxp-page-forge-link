@@ -18,15 +18,7 @@ export default {
 			}
 		},
 		extend: {
-			fontFamily: {
-				'inter': ['Inter', 'sans-serif'],
-				'sans': ['Inter', 'sans-serif'],
-			},
 			colors: {
-				'trading-gold': 'hsl(var(--trading-gold))',
-				'trading-gold-dark': 'hsl(var(--trading-gold-dark))',
-				'trading-green': 'hsl(var(--trading-green))',
-				'trading-green-light': 'hsl(var(--trading-green-light))',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -73,13 +65,11 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
-				'gradient-secondary': 'var(--gradient-secondary)',
-				'gradient-button': 'var(--gradient-button)'
+				'gradient-secondary': 'var(--gradient-secondary)'
 			},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
-				'card': 'var(--shadow-card)',
-				'glow': 'var(--shadow-glow)'
+				'card': 'var(--shadow-card)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)'
