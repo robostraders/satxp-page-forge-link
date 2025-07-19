@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -58,6 +59,11 @@ All colors MUST be HSL.
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
+    /* Section Transition Variables */
+    --transition-height-mobile: 50px;
+    --transition-height-tablet: 60px;
+    --transition-height-desktop: 80px;
+
     --sidebar-background: 0 0% 0%;
     --sidebar-foreground: 0 0% 100%;
     --sidebar-primary: 48 100% 55%;
@@ -114,5 +120,43 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Section Transition Utility */
+  .section-transition {
+    @apply relative;
+  }
+
+  .section-transition::after {
+    content: '';
+    @apply absolute left-0 w-full pointer-events-none;
+    bottom: calc(var(--transition-height-mobile) / -2);
+    height: var(--transition-height-mobile);
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(0, 0, 0, 0.8) 45%,
+      rgba(0, 0, 0, 0.8) 55%,
+      transparent 100%
+    );
+    backdrop-filter: blur(1px);
+    filter: blur(0.5px);
+    z-index: 10;
+  }
+
+  @media (min-width: 768px) {
+    .section-transition::after {
+      bottom: calc(var(--transition-height-tablet) / -2);
+      height: var(--transition-height-tablet);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-transition::after {
+      bottom: calc(var(--transition-height-desktop) / -2);
+      height: var(--transition-height-desktop);
+    }
   }
 }

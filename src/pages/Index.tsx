@@ -66,7 +66,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden section-transition">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -116,7 +116,7 @@ export default function Index() {
       </section>
 
       {/* Registration Section */}
-      <section className="py-20 bg-background relative overflow-hidden">
+      <section className="py-20 bg-background relative overflow-hidden section-transition">
         <div 
           className="absolute inset-0 bg-cover bg-no-repeat opacity-30"
           style={{
@@ -149,7 +149,7 @@ export default function Index() {
       </section>
 
       {/* Learning Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-background section-transition">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 text-primary tracking-wider">O QUE VOCÊ VAI APRENDER:</h2>
           
@@ -199,7 +199,7 @@ export default function Index() {
       </section>
 
       {/* Offer Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-background section-transition">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -250,7 +250,7 @@ export default function Index() {
       </section>
 
       {/* CTA with Scarcity */}
-      <section className="py-20 bg-background text-center">
+      <section className="py-20 bg-background text-center section-transition">
         <div className="container mx-auto px-4">
           <p className="text-2xl mb-8 text-secondary max-w-4xl mx-auto">
             Tudo isso será liberado somente durante a aula. As instruções completas de acesso serão apresentadas ao vivo.
@@ -270,7 +270,7 @@ export default function Index() {
       </section>
 
       {/* About Danilo */}
-      <section className="py-20 bg-background relative overflow-hidden">
+      <section className="py-20 bg-background relative overflow-hidden section-transition">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -308,7 +308,7 @@ export default function Index() {
       </section>
 
       {/* Why Free */}
-      <section className="py-24 relative min-h-screen flex items-center justify-center">
+      <section className="py-24 relative min-h-screen flex items-center justify-center section-transition">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -334,7 +334,7 @@ export default function Index() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-background section-transition">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 text-primary tracking-wider">
             PERGUNTAS FREQUENTES (FAQ)
