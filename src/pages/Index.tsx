@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -75,6 +76,9 @@ export default function Index() {
         />
         <div className="absolute inset-0 bg-black/60" />
         
+        {/* Gradient transition to next section */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-black/80 z-20"></div>
+        
         <div className="relative z-10 container mx-auto px-4 text-center">
           {/* Logos */}
           <div className="flex items-center justify-center gap-6 mb-8">
@@ -101,14 +105,14 @@ export default function Index() {
           </div>
           
           {/* Main headline with improved responsiveness */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 max-w-6xl mx-auto leading-tight uppercase">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 max-w-6xl mx-auto leading-tight uppercase">
             A <span className="text-primary">XP ESTÁ PATROCINANDO</span> QUEM<br />
             <span className="text-primary">QUER PARAR DE OPERAR MANUALMENTE E COLOCAR ROBÔS</span><br />
             PARA TRABALHAR NO MERCADO
           </h1>
           
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-secondary mb-12 max-w-5xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl lg:text-2xl text-secondary mb-12 max-w-5xl mx-auto leading-relaxed">
             Descubra como ser 'patrocinado' pela XP e aprenda gratuitamente como criar e usar robôs de trading 
             para automatizar suas operações na Bolsa — mesmo que você nunca tenha investido antes ou saiba programar.
           </p>
@@ -116,14 +120,21 @@ export default function Index() {
       </section>
 
       {/* Registration Section */}
-      <section className="py-20 bg-background relative overflow-hidden">
+      <section className="py-20 bg-background relative overflow-hidden -mt-16">
+        {/* Gradient from previous section */}
+        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black/80 to-transparent z-10"></div>
+        
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{
             backgroundImage: "url('https://framerusercontent.com/images/YFihUE32N3fqSpZxDVrTMYgAz8M.png')"
           }}
         />
-        <div className="container mx-auto px-4 relative z-10">
+        
+        {/* Gradient transition to next section */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-black z-20"></div>
+        
+        <div className="container mx-auto px-4 relative z-10 pt-16">
           <div className="grid lg:grid-cols-[1fr_2fr] gap-16 items-center">
             {/* Left side - Registration Form */}
             <div className="lg:pl-8 xl:pl-16">
@@ -148,9 +159,15 @@ export default function Index() {
       </section>
 
       {/* Learning Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 text-primary tracking-wider">O QUE VOCÊ VAI APRENDER:</h2>
+      <section className="py-20 bg-background relative -mt-16">
+        {/* Gradient from previous section */}
+        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent z-10"></div>
+        
+        {/* Gradient transition to next section */}
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent via-black/50 to-black/80 z-20"></div>
+        
+        <div className="container mx-auto px-4 relative z-10 pt-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-primary tracking-wider">O QUE VOCÊ VAI APRENDER:</h2>
           
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             <Card className="bg-gradient-to-b from-[#140f00] to-[#131313] border-primary/20 p-10 hover:shadow-[0_10px_30px_-10px_hsl(var(--primary)_/_0.3)] transition-all duration-300 hover:border-primary/40">
@@ -198,18 +215,24 @@ export default function Index() {
       </section>
 
       {/* Offer Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-background relative -mt-12">
+        {/* Gradient from previous section */}
+        <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-black/80 to-transparent z-10"></div>
+        
+        {/* Gradient transition to next section */}
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-b from-transparent to-black/60 z-20"></div>
+        
+        <div className="container mx-auto px-4 relative z-10 pt-12">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-8 text-primary leading-tight">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary leading-tight">
                 PRESENTE DE ALTO VALOR DA XP PARA VOCÊ!
               </h2>
-              <h3 className="text-2xl md:text-3xl font-bold mb-12 text-foreground leading-tight">
+              <h3 className="text-xl md:text-2xl font-bold mb-12 text-foreground leading-tight">
                 SE INSCREVA AGORA E ACESSE GRATUITAMENTE UM PACOTE AVALIADO EM MAIS DE R$ 3.500
               </h3>
               
-              <div className="space-y-6 text-xl">
+              <div className="space-y-6 text-lg md:text-xl">
                 <div className="flex items-start gap-4">
                   <Check className="w-8 h-8 text-cta-green mt-1 flex-shrink-0" />
                   <span>Curso completo "Start Autotrading" com 3 trilhas práticas</span>
@@ -249,27 +272,36 @@ export default function Index() {
       </section>
 
       {/* CTA with Scarcity */}
-      <section className="py-20 bg-background text-center">
-        <div className="container mx-auto px-4">
-          <p className="text-2xl mb-8 text-secondary max-w-4xl mx-auto">
+      <section className="py-20 bg-background text-center relative -mt-10">
+        {/* Gradient from previous section */}
+        <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-black/60 to-transparent z-10"></div>
+        
+        {/* Gradient transition to next section */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent via-black/40 to-black/70 z-20"></div>
+        
+        <div className="container mx-auto px-4 relative z-10 pt-10">
+          <p className="text-xl md:text-2xl mb-8 text-secondary max-w-4xl mx-auto">
             Tudo isso será liberado somente durante a aula. As instruções completas de acesso serão apresentadas ao vivo.
           </p>
           
-          <h2 className="text-4xl font-bold mb-12 text-foreground">Vagas limitadas.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-foreground">Vagas limitadas.</h2>
           
           <div className="mb-12">
-            <p className="text-3xl text-secondary line-through mb-4">De R$ 3.500</p>
-            <p className="text-7xl md:text-9xl font-bold text-primary">por R$ 0</p>
+            <p className="text-2xl md:text-3xl text-secondary line-through mb-4">De R$ 3.500</p>
+            <p className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary">por R$ 0</p>
           </div>
           
-          <Button className="bg-gradient-to-r from-cta-green to-cta-green-dark hover:from-cta-green-dark hover:to-cta-green text-white px-16 py-8 text-2xl font-bold rounded-xl shadow-[0_0_40px_hsl(var(--cta-green)_/_0.4)] hover:shadow-[0_0_60px_hsl(var(--cta-green)_/_0.6)] transition-all duration-300 transform hover:scale-105">
+          <Button className="bg-gradient-to-r from-cta-green to-cta-green-dark hover:from-cta-green-dark hover:to-cta-green text-white px-12 md:px-16 py-6 md:py-8 text-xl md:text-2xl font-bold rounded-xl shadow-[0_0_40px_hsl(var(--cta-green)_/_0.4)] hover:shadow-[0_0_60px_hsl(var(--cta-green)_/_0.6)] transition-all duration-300 transform hover:scale-105">
             SIM, QUERO MINHA VAGA AGORA
           </Button>
         </div>
       </section>
 
       {/* About Danilo */}
-      <section className="py-20 bg-background relative overflow-hidden">
+      <section className="py-20 bg-background relative overflow-hidden -mt-16">
+        {/* Gradient from previous section */}
+        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black/70 to-transparent z-30"></div>
+        
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -284,11 +316,14 @@ export default function Index() {
         />
         <div className="absolute inset-0 bg-gradient-radial from-transparent via-black/30 to-black/80" />
         
-        <div className="container mx-auto px-4 relative z-10">
+        {/* Gradient transition to next section */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-black/90 z-20"></div>
+        
+        <div className="container mx-auto px-4 relative z-10 pt-16">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="max-w-2xl">
-              <h2 className="text-4xl md:text-5xl font-bold mb-8 text-primary tracking-wider">SOBRE DANILO LEANDRO:</h2>
-              <p className="text-xl leading-relaxed text-foreground">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary tracking-wider">SOBRE DANILO LEANDRO:</h2>
+              <p className="text-lg md:text-xl leading-relaxed text-foreground">
                 Danilo Leandro é engenheiro, opera no mercado financeiro desde 2007 e é especialista em programação 
                 de estratégias automatizadas para bolsa de valores desde 2015. Ao longo de sua carreira, atuou como 
                 assessor de investimentos e desenvolveu Robôs para grandes investidores e para os mais renomados 
@@ -307,7 +342,10 @@ export default function Index() {
       </section>
 
       {/* Why Free */}
-      <section className="py-24 relative min-h-screen flex items-center justify-center">
+      <section className="py-24 relative min-h-screen flex items-center justify-center -mt-16">
+        {/* Gradient from previous section */}
+        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black/90 to-transparent z-30"></div>
+        
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -316,9 +354,12 @@ export default function Index() {
         />
         <div className="absolute inset-0 bg-gradient-radial from-transparent via-black/50 to-black/80" />
         
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl md:text-6xl font-bold mb-12 text-primary tracking-wider">POR QUE ESSA AULA É GRATUITA?</h2>
-          <p className="text-xl md:text-2xl text-foreground max-w-5xl mx-auto leading-relaxed mb-12">
+        {/* Gradient transition to next section */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-black z-20"></div>
+        
+        <div className="container mx-auto px-4 text-center relative z-10 pt-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-primary tracking-wider">POR QUE ESSA AULA É GRATUITA?</h2>
+          <p className="text-lg md:text-xl text-foreground max-w-5xl mx-auto leading-relaxed mb-12">
             Essa aula faz parte de uma iniciativa educacional com apoio da XP, que tem como objetivo democratizar 
             o acesso ao conhecimento sobre trading automatizado. Acreditamos que a tecnologia pode tornar o mercado 
             mais acessível, transparente e profissional — e você pode fazer parte disso agora. Sem promessas milagrosas. 
@@ -326,16 +367,22 @@ export default function Index() {
             clareza e consistência. Garanta agora sua vaga!
           </p>
           
-          <Button className="bg-gradient-to-r from-cta-green to-cta-green-dark hover:from-cta-green-dark hover:to-cta-green text-white px-16 py-8 text-2xl font-bold rounded-xl shadow-[0_0_40px_hsl(var(--cta-green)_/_0.4)] hover:shadow-[0_0_60px_hsl(var(--cta-green)_/_0.6)] transition-all duration-300 transform hover:scale-105">
+          <Button className="bg-gradient-to-r from-cta-green to-cta-green-dark hover:from-cta-green-dark hover:to-cta-green text-white px-12 md:px-16 py-6 md:py-8 text-xl md:text-2xl font-bold rounded-xl shadow-[0_0_40px_hsl(var(--cta-green)_/_0.4)] hover:shadow-[0_0_60px_hsl(var(--cta-green)_/_0.6)] transition-all duration-300 transform hover:scale-105">
             SIM, EU QUERO PARTICIPAR
           </Button>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 text-primary tracking-wider">
+      <section className="py-20 bg-background relative -mt-16">
+        {/* Gradient from previous section */}
+        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent z-10"></div>
+        
+        {/* Gradient transition to next section */}
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-b from-transparent to-black/50 z-20"></div>
+        
+        <div className="container mx-auto px-4 relative z-10 pt-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-primary tracking-wider">
             PERGUNTAS FREQUENTES (FAQ)
           </h2>
           
@@ -343,10 +390,10 @@ export default function Index() {
             <Accordion type="single" collapsible className="space-y-6">
               {faqItems.map((item, index) => (
                 <AccordionItem key={index} value={`item-${index}`} className="border border-primary/30 rounded-lg bg-gradient-to-b from-[#140f00] to-[#131313] px-8 py-4">
-                  <AccordionTrigger className="text-left text-xl font-bold text-foreground hover:text-primary transition-colors py-6 [&[data-state=open]>svg]:rotate-180">
+                  <AccordionTrigger className="text-left text-lg md:text-xl font-bold text-foreground hover:text-primary transition-colors py-6 [&[data-state=open]>svg]:rotate-180">
                     {item.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-secondary text-lg leading-relaxed pb-6">
+                  <AccordionContent className="text-secondary text-base md:text-lg leading-relaxed pb-6">
                     {item.answer}
                   </AccordionContent>
                 </AccordionItem>
@@ -357,9 +404,12 @@ export default function Index() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-background text-center">
-        <div className="container mx-auto px-4">
-          <Button className="bg-gradient-to-r from-cta-green to-cta-green-dark hover:from-cta-green-dark hover:to-cta-green text-white px-16 py-8 text-2xl font-bold rounded-xl shadow-[0_0_40px_hsl(var(--cta-green)_/_0.4)] hover:shadow-[0_0_60px_hsl(var(--cta-green)_/_0.6)] transition-all duration-300 transform hover:scale-105">
+      <section className="py-20 bg-background text-center relative -mt-10">
+        {/* Gradient from previous section */}
+        <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-black/50 to-transparent z-10"></div>
+        
+        <div className="container mx-auto px-4 relative z-10 pt-10">
+          <Button className="bg-gradient-to-r from-cta-green to-cta-green-dark hover:from-cta-green-dark hover:to-cta-green text-white px-12 md:px-16 py-6 md:py-8 text-xl md:text-2xl font-bold rounded-xl shadow-[0_0_40px_hsl(var(--cta-green)_/_0.4)] hover:shadow-[0_0_60px_hsl(var(--cta-green)_/_0.6)] transition-all duration-300 transform hover:scale-105">
             SIM, QUERO MINHA VAGA AGORA
           </Button>
         </div>
