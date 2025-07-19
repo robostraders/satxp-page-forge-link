@@ -99,10 +99,12 @@ export default function Index() {
             <div className="h-px w-20 bg-gradient-to-l from-transparent to-primary"></div>
           </div>
           
-          {/* Main headline */}
+          {/* Main headline with exact formatting from image */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 max-w-6xl mx-auto leading-tight">
-            A XP Está Patrocinando Quem Quer Parar de Operar Manualmente e{" "}
-            <span className="text-primary">Colocar Robôs para Trabalhar no Mercado</span>
+            <span className="text-primary">A XP</span> Está Patrocinando Quem Quer<br />
+            Parar de Operar Manualmente e<br />
+            Colocar <span className="text-primary">ROBÔS</span> para Trabalhar<br />
+            no Mercado
           </h1>
           
           {/* Subtitle */}
