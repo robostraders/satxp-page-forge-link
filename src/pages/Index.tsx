@@ -100,8 +100,8 @@ export default function Index() {
             <div className="h-px w-20 bg-gradient-to-l from-transparent to-primary"></div>
           </div>
           
-          {/* Main headline with exact formatting from image */}
-          <h1 className="text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-bold mb-8 max-w-6xl mx-auto leading-tight uppercase">
+          {/* Main headline with improved responsiveness */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 max-w-6xl mx-auto leading-tight uppercase">
             A <span className="text-primary">XP ESTÁ PATROCINANDO</span> QUEM<br />
             <span className="text-primary">QUER PARAR DE OPERAR MANUALMENTE E COLOCAR ROBÔS</span><br />
             PARA TRABALHAR NO MERCADO
@@ -137,8 +137,8 @@ export default function Index() {
                 <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden">
                   <img 
                     src="/lovable-uploads/7f0c7634-e96d-462e-81ec-14fadf6efbe7.png" 
-                    alt="Danilo Leandro"
-                    className="w-full h-full object-cover object-center"
+                    alt="Danilo"
+                    className="w-full h-full object-cover object-[60%_center]"
                   />
                 </div>
               </div>

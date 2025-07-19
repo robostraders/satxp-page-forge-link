@@ -20,7 +20,7 @@ export function RegistrationForm() {
 
   return (
     <div className="max-w-lg">
-      <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary leading-tight">
+      <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-8 text-primary leading-tight">
         SE INSCREVA AGORA E ACESSE GRATUITAMENTE UM PACOTE AVALIADO EM MAIS DE R$ 3.500
       </h2>
 
