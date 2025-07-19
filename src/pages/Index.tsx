@@ -118,9 +118,10 @@ export default function Index() {
       {/* Registration Section */}
       <section className="py-20 bg-background relative overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+          className="absolute inset-0 bg-cover bg-no-repeat opacity-30"
           style={{
-            backgroundImage: "url('https://framerusercontent.com/images/YFihUE32N3fqSpZxDVrTMYgAz8M.png')"
+            backgroundImage: "url('https://framerusercontent.com/images/YFihUE32N3fqSpZxDVrTMYgAz8M.png')",
+            backgroundPosition: "80% center"
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
