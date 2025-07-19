@@ -124,24 +124,21 @@ export default function Index() {
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-[1fr_1.5fr] gap-16 items-center">
+          <div className="grid lg:grid-cols-[1fr_2fr] gap-16 items-center">
             {/* Left side - Registration Form */}
-            <div>
+            <div className="lg:pl-8 xl:pl-16">
               <RegistrationForm />
             </div>
             
-            {/* Right side - Photo with Subtle Effect */}
-            <div className="flex justify-center lg:justify-end xl:justify-center">
-              <div className="relative">
-                {/* Subtle background glow */}
-                <div className="absolute -inset-4 bg-primary/20 rounded-full blur-xl opacity-40"></div>
-                
-                {/* Main photo container */}
-                <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-2 border-primary/30 shadow-2xl">
+            {/* Right side - Photo positioned to center character */}
+            <div className="flex justify-center lg:justify-start xl:justify-center">
+              <div className="relative lg:ml-16 xl:ml-0">
+                {/* Main photo container - no effects, positioned to show character center */}
+                <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden">
                   <img 
                     src="/lovable-uploads/7f0c7634-e96d-462e-81ec-14fadf6efbe7.png" 
                     alt="Danilo Leandro"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
               </div>
