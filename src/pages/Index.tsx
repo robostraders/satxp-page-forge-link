@@ -66,7 +66,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden section-fade-bottom">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -116,7 +116,7 @@ export default function Index() {
       </section>
 
       {/* Registration Section */}
-      <section className="py-20 bg-background relative overflow-hidden section-fade-top section-fade-bottom">
+      <section className="py-20 bg-background relative overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-no-repeat opacity-30"
           style={{
@@ -270,7 +270,7 @@ export default function Index() {
       </section>
 
       {/* About Danilo */}
-      <section className="py-20 bg-background relative overflow-hidden section-fade-top section-fade-bottom">
+      <section className="py-20 bg-background relative overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -308,7 +308,7 @@ export default function Index() {
       </section>
 
       {/* Why Free */}
-      <section className="py-24 relative min-h-screen flex items-center justify-center section-fade-top section-fade-bottom">
+      <section className="py-24 relative min-h-screen flex items-center justify-center">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
