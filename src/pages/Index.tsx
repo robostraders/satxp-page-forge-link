@@ -100,11 +100,11 @@ export default function Index() {
           </div>
           
           {/* Main headline with exact formatting from image */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 max-w-6xl mx-auto leading-tight">
-            <span className="text-primary">A XP Está Patrocinando Quem Quer<br />
-            Parar de Operar Manualmente e<br />
-            Colocar ROBÔS</span> para Trabalhar<br />
-            no Mercado
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 max-w-6xl mx-auto leading-tight uppercase">
+            A <span className="text-primary">XP ESTÁ PATROCINANDO</span><br />
+            QUEM <span className="text-primary">QUER PARAR DE OPERAR MANUALMENTE E<br />
+            COLOCAR ROBÔS</span> PARA TRABALHAR<br />
+            NO MERCADO
           </h1>
           
           {/* Subtitle */}
