@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -19,9 +18,6 @@ export default {
 			}
 		},
 		extend: {
-			fontFamily: {
-				'inter': ['Inter', 'sans-serif'],
-			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -65,26 +61,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				},
-				gold: {
-					DEFAULT: 'hsl(var(--gold-primary))',
-					primary: 'hsl(var(--gold-primary))',
-					secondary: 'hsl(var(--gold-secondary))',
-					tertiary: 'hsl(var(--gold-tertiary))',
-					light: 'hsl(var(--gold-light))',
-					dark: 'hsl(var(--gold-dark))'
 				}
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
-				'gradient-secondary': 'var(--gradient-secondary)',
-				'gradient-gold': 'var(--gradient-gold)',
-				'gradient-gold-radial': 'var(--gradient-gold-radial)'
+				'gradient-secondary': 'var(--gradient-secondary)'
 			},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
-				'card': 'var(--shadow-card)',
-				'gold': 'var(--shadow-gold)'
+				'card': 'var(--shadow-card)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)'
@@ -93,11 +78,6 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
-			},
-			screens: {
-				'mobile': {'max': '809px'},
-				'tablet': {'min': '810px', 'max': '1919px'},
-				'desktop': {'min': '1920px'},
 			},
 			keyframes: {
 				'accordion-down': {
@@ -115,33 +95,11 @@ export default {
 					to: {
 						height: '0'
 					}
-				},
-				'fade-in': {
-					'0%': {
-						opacity: '0',
-						transform: 'translateY(10px)'
-					},
-					'100%': {
-						opacity: '1',
-						transform: 'translateY(0)'
-					}
-				},
-				'bounce-slow': {
-					'0%, 100%': {
-						transform: 'translateY(-5%)',
-						animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)'
-					},
-					'50%': {
-						transform: 'translateY(0)',
-						animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)'
-					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fade-in 0.3s ease-out',
-				'bounce-slow': 'bounce-slow 3s infinite'
+				'accordion-up': 'accordion-up 0.2s ease-out'
 			}
 		}
 	},
