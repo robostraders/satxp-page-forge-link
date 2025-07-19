@@ -19,28 +19,10 @@ export function RegistrationForm() {
   };
 
   return (
-    <div className="space-y-8">
-      <div>
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary leading-tight">
-          SE INSCREVA AGORA E ACESSE GRATUITAMENTE UM PACOTE AVALIADO EM MAIS DE R$ 3.500
-        </h2>
-        
-        {/* Event Info */}
-        <div className="space-y-4 mb-8 text-xl">
-          <p className="flex items-center gap-4">
-            <span className="text-2xl">📆</span> 
-            <span><strong>Data:</strong> [inserir data]</span>
-          </p>
-          <p className="flex items-center gap-4">
-            <span className="text-2xl">⏰</span> 
-            <span><strong>Horário:</strong> [inserir horário]</span>
-          </p>
-          <p className="flex items-center gap-4">
-            <span className="text-2xl">📍</span> 
-            <span><strong>Evento 100% Online e Gratuito</strong></span>
-          </p>
-        </div>
-      </div>
+    <div className="max-w-lg">
+      <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary leading-tight">
+        SE INSCREVA AGORA E ACESSE GRATUITAMENTE UM PACOTE AVALIADO EM MAIS DE R$ 3.500
+      </h2>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         <div className="space-y-2">

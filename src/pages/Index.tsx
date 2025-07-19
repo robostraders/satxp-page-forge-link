@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -125,35 +124,26 @@ export default function Index() {
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-[1fr_1.5fr] gap-16 items-center">
             {/* Left side - Registration Form */}
             <div>
               <RegistrationForm />
             </div>
             
-            {/* Right side - Photo with Golden Effect */}
-            <div className="flex justify-center lg:justify-end">
+            {/* Right side - Photo with Subtle Effect */}
+            <div className="flex justify-center lg:justify-end xl:justify-center">
               <div className="relative">
-                {/* Golden glow background */}
-                <div className="absolute -inset-8 bg-gradient-to-r from-primary/20 via-primary/40 to-primary/20 rounded-full blur-3xl opacity-60"></div>
-                <div className="absolute -inset-4 bg-gradient-to-r from-primary/30 via-primary/50 to-primary/30 rounded-full blur-2xl opacity-80"></div>
+                {/* Subtle background glow */}
+                <div className="absolute -inset-4 bg-primary/20 rounded-full blur-xl opacity-40"></div>
                 
                 {/* Main photo container */}
-                <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/50 shadow-[0_0_60px_hsl(var(--primary)_/_0.6)]">
+                <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-2 border-primary/30 shadow-2xl">
                   <img 
                     src="/lovable-uploads/7f0c7634-e96d-462e-81ec-14fadf6efbe7.png" 
                     alt="Danilo Leandro"
                     className="w-full h-full object-cover"
                   />
-                  
-                  {/* Golden overlay gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-primary/30 mix-blend-overlay"></div>
                 </div>
-                
-                {/* Additional golden sparkle effects */}
-                <div className="absolute top-8 right-8 w-4 h-4 bg-primary rounded-full opacity-80 animate-pulse"></div>
-                <div className="absolute bottom-12 left-8 w-3 h-3 bg-primary rounded-full opacity-60 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-                <div className="absolute top-1/3 -right-4 w-2 h-2 bg-primary rounded-full opacity-70 animate-pulse" style={{ animationDelay: '1s' }}></div>
               </div>
             </div>
           </div>
